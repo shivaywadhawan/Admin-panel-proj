@@ -1,0 +1,95 @@
+#navbtn{
+	margin-right: 40px;
+}
+
+nav h4{
+	margin-right: 40px;
+
+
+}
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+}
+
+#content{
+	width: 100%;
+}
+
+#sidebar {
+	   min-width: 230px;
+    max-width: 230px;
+    min-height: 100vh;
+    /* width: 230px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 999;*/
+    background-color: #343a40;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+#sidebar.active {
+    margin-left: -230px;
+}
+
+@media (max-width: 768px) {
+    #sidebar {
+        margin-left: -230px;
+    }
+    #sidebar.active {
+        margin-left: 0;
+    }
+}
+a, a:hover, a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+#sidebar .sidebar-header {
+    padding: 20px;
+    padding-bottom: 0;
+    margin-bottom: 18px;
+
+    
+}
+
+#sidebar ul li span{
+	margin-left: 10px;
+}
+
+#sidebar ul.components {
+    padding: 0 0;
+   
+}
+#sidebar ul li a {
+    padding: 20px;
+    font-size: 1.3em;
+    display: block;
+}
+
+#sidebar ul li a:hover {
+    color: #343a40;
+    background: white;
+}
+#sidebar ul li.active > a, a[aria-expanded="true"] {
+    color: #343a40;
+    background: white;
+}
+#sidebarCollapse{
+	margin-right: 10px;
+}
+
+#myTable_wrapper{
+	margin:20px;
+}
+
+.navbar-nav .show>.nav-link{
+	background-color: #343a40;
+}
+
+
